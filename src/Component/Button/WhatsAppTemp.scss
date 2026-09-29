@@ -1,0 +1,12 @@
+#w-btn{
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#w-btn:hover{
+  transform: translateY(-3px);
+  border-radius: 300px;
+}

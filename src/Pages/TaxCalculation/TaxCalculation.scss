@@ -1,0 +1,286 @@
+#tax-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  min-height: 250px;
+  background-image:
+  linear-gradient(
+    90deg,
+    rgba(0, 107, 27, 0.75) 0%,
+    rgba(0, 143, 37, 0.55) 50%,
+    rgba(0, 95, 25, 0.40) 100%
+  ),
+  url("@/assets/image/tax.png");
+    background-position: right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    color: #fff;
+}
+
+//For Tablet
+@media (max-width:768px) {
+  #tax-background{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10px;
+  min-height: 230px;
+  }
+  
+}
+#tax-calculate{
+  width: 150px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+  border: 2px solid #fefffe;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  animation: floatingBadgex 2s ease-in-out infinite;
+}
+
+
+@keyframes floatingBadgex {
+  0% {
+    transform: translateY(0);
+  }
+  
+  50% {
+    transform: translateY(-4px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+//For Tablet
+@media (max-width:768px) {
+ #tax-calculate{
+  width: 150px;
+  font-size: 16px;
+  padding: 5px;
+  margin: 20px 0 0;
+} 
+}
+
+#taxcalculate-heading{
+  font-size: 30px;
+  margin-top: 15px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+//For Tablet
+@media (max-width: 768px) {
+  #taxcalculate-heading{
+    font-size: 25px;
+    margin-top: 8px 0;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+}
+
+#taxcalculate-para{
+  margin-top: 10px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  #br-line{
+    display: none;
+}
+}
+
+//For Tablet
+@media (max-width: 991px) {
+  #taxcalculate-para{
+    max-width: 100%;
+    font-weight: 400;
+    margin:5px 0 10px 0;
+    line-height: 1.6;
+    font-size: 20px;
+    padding:5px 0;
+}
+}
+
+//For Mobile
+@media (max-width: 768px) {
+  #taxcalculate-para{
+    max-width: 90%;
+    font-weight: 400;
+    margin-bottom:10px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding:5px 0;
+}
+}
+
+#tax-form{
+   height: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+#taxform-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+//For Mobile
+@media (max-width:768px) {
+  #taxform-heading {
+  font-size: 28px;
+  font-weight: 600;
+} 
+}
+
+#this-icon {
+  font-size: 26px;
+}
+
+#anuualincome-text,#deducation-texts {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+}
+
+#annualIncome{
+  padding: 7px;
+}
+
+#deduction{
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+#taxform-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+#taxtform-icon{
+  font-size: 18px;
+}
+
+// Second Part - Summary part
+#summary-box{
+   height: 100%;
+  background-color: rgba(3, 130, 3, 0.2);;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.summarybox-para{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0 5px 0;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+
+.summarybox-span{
+ position: static;
+}
+
+#taxsummary-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+//For Mobile
+@media (max-width:768px) {
+  #taxsummary-heading{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 600;
+} 
+}
+
+
+.extimate-calculate {
+    display: flex;
+    height: auto;
+    color: #fefffe;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(
+  90deg,
+  rgba(0, 107, 27, 0.95) 0%,
+  rgba(0, 143, 37, 0.85) 50%,
+  rgba(0, 95, 25, 0.95) 100%
+);
+}
+
+.extimate-calculate span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.extimate-calculate p {
+   display: flex;
+   align-items: flex-start;
+   gap: 8px;
+   font-weight: 600;
+   font-size: 18px;
+   margin: 20px 0 10px 0;
+}
+
+//Extimate Tax
+#Extimate-Tax{
+  background-color: #fff;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-left: 10px;
+  margin: 15px 0;
+}
+
+#Extimate-Tax h2{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+//For Mobile
+@media (max-width:768px) {
+  #Extimate-Tax h2{
+  font-size: 20px;
+  font-weight: 600;
+} 
+}

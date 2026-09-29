@@ -1,0 +1,16 @@
+.footer-brand svg,
+.contact-info svg {
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.email {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
